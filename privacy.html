@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>プライバシーポリシー | みんなのゲーセンメモリー</title>
+    <meta name="description" content="みんなのゲーセンメモリーのプライバシーポリシーです。">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <div class="brand">
+          <p class="brand-title"><strong>みんなのゲーセンメモリー</strong></p>
+          <p class="brand-sub">Arcade Memory Studio</p>
+        </div>
+        <nav class="nav" aria-label="法務ページ">
+          <a href="index.html">トップ</a>
+          <a href="privacy.html" aria-current="page">プライバシーポリシー</a>
+          <a href="terms.html">利用規約</a>
+          <a href="community-guidelines.html">投稿・撮影ルール</a>
+          <a href="support.html">サポート</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <section class="hero">
+          <p class="eyebrow">Privacy Policy</p>
+          <h1>プライバシーポリシー</h1>
+          <p class="lead">
+            本ポリシーは、Arcade Memory Studio が提供する「みんなのゲーセンメモリー」における情報の取り扱いを説明するものです。
+          </p>
+          <div class="notice">
+            <strong>法務確認前の下書きです。</strong> 本文は現在の実装実態に合わせた事実整理を含みますが、公開前に必ず人間が最終確認してください。
+          </div>
+          <ul class="meta-list">
+            <li><span class="meta-label">アプリ名</span><span>みんなのゲーセンメモリー</span></li>
+            <li><span class="meta-label">運営名</span><span>Arcade Memory Studio</span></li>
+            <li><span class="meta-label">bundle ID</span><span>com.gacenmemory.app</span></li>
+            <li><span class="meta-label">Android package</span><span>com.gacenmemory.app</span></li>
+            <li><span class="meta-label">お問い合わせ</span><span><a href="mailto:gacenmemory@gmail.com">gacenmemory@gmail.com</a></span></li>
+            <li><span class="meta-label">最終更新日</span><span>2026年6月5日</span></li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>1. 取得・利用する可能性がある情報</h2>
+          <p>本アプリでは、利用する機能に応じて、次の情報を取り扱う場合があります。</p>
+          <ul>
+            <li>メールアドレスなど、ログイン認証に必要な情報。</li>
+            <li>プロフィール情報。表示名、ユーザーID、ひとこと、よく行く地域、好きなジャンルなど。</li>
+            <li>メモ、店舗メモ、公開範囲、店舗や機種に関する申請・報告内容。</li>
+            <li>友達申請、友達関係、ブロック、通報、お問い合わせの内容。</li>
+            <li>使用金額、プレイ記録、預けメダル、カウンター、お気に入りなどの自己記録。</li>
+            <li>「自分だけ」のメモに添付する写真の端末内URI。</li>
+            <li>近くの店舗を表示するため、その時点で端末から取得する位置情報。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>2. 端末内のみで扱うデータ</h2>
+          <p>現在の実装では、次の情報は主に利用者の端末内に保存されます。アプリ削除、機種変更、端末の不具合などにより失われる場合があります。</p>
+          <ul>
+            <li>「自分だけ」のメモ、未ログイン時の記録。</li>
+            <li>写真。写真は「自分だけ」のメモにのみ添付でき、現在サーバーへアップロードされません。</li>
+            <li>使用金額・プレイ記録、預けメダル、カウンター、カウンタータイマー、お気に入り。</li>
+            <li>写真ルール同意の省略設定などのアプリ内フラグ。</li>
+            <li>端末内プロフィール。ログイン中にプロフィール保存を行う場合は、同じ内容がSupabaseへ反映されることがあります。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>3. Supabaseへ送信されるデータ</h2>
+          <p>ログインして以下の機能を使う場合、内容はバックエンドとして利用している Supabase のクラウド環境へ送信・保存されます。</p>
+          <table class="data-table">
+            <tbody>
+              <tr>
+                <th>認証</th>
+                <td>メールアドレス、認証セッション、アカウントID。</td>
+              </tr>
+              <tr>
+                <th>プロフィール</th>
+                <td>表示名、ユーザーID、ひとこと、よく行く地域、好きなジャンル。</td>
+              </tr>
+              <tr>
+                <th>投稿</th>
+                <td>全国公開メモ、全国公開店舗メモ、友達限定メモの本文、店舗ID、機種ID、投稿者ID。写真は含みません。</td>
+              </tr>
+              <tr>
+                <th>友達機能</th>
+                <td>友達申請、承認・拒否・取消の状態、友達関係。</td>
+              </tr>
+              <tr>
+                <th>申請・報告</th>
+                <td>店舗の新規申請、店舗情報修正申請、機種追加・修正申請、設置・撤去・カテゴリ修正の報告。</td>
+              </tr>
+              <tr>
+                <th>問い合わせ・通報</th>
+                <td>問い合わせ種別、件名、本文、返信先メールアドレス、通報対象、理由、補足内容。</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="small">未ログイン、未設定、通信失敗時には、サーバー機能が利用できない、または端末内の控えだけが残る場合があります。</p>
+        </section>
+
+        <section class="section">
+          <h2>4. 全国公開されるデータ</h2>
+          <p>利用者が「全国公開」を選んだ投稿や、運営確認後に共有情報として反映される情報は、他の利用者に表示されます。</p>
+          <ul>
+            <li>全国公開メモ、全国公開店舗メモの本文、対象店舗・機種、投稿日時、投稿者の表示名。</li>
+            <li>設置機種の追加報告のうち、承認または即時共有された店舗・機種情報。</li>
+            <li>店舗・機種の申請や修正申請のうち、運営確認後に店舗情報、設置情報、共有機種マスタへ反映された内容。</li>
+          </ul>
+          <p>店舗情報・機種情報は公式情報ではなく、利用者投稿や運営確認を含む参考情報です。最新かつ正確な情報は各店舗・公式案内をご確認ください。</p>
+        </section>
+
+        <section class="section">
+          <h2>5. 写真と位置情報</h2>
+          <div class="two-col">
+            <div>
+              <h3>写真</h3>
+              <ul>
+                <li>写真は「自分だけ」のメモにのみ添付できます。</li>
+                <li>全国公開・友達限定の投稿には写真は表示されません。</li>
+                <li>写真は現在、外部へのアップロードや公開を行いません。</li>
+                <li>店舗写真機能は準備中です。</li>
+              </ul>
+            </div>
+            <div>
+              <h3>位置情報</h3>
+              <ul>
+                <li>近くのゲームセンターを地図上に表示するため、アプリ使用中のみ取得します。</li>
+                <li>バックグラウンドでの取得は行いません。</li>
+                <li>現在の実装では、取得した現在地をSupabaseへ保存する処理は確認されていません。</li>
+                <li>位置情報を許可しない場合でも、店舗名や地域から検索できます。</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>6. 外部サービス・SDK</h2>
+          <ul>
+            <li>Supabase: ログイン認証、プロフィール、投稿、友達、申請、問い合わせ、通報、アカウント削除の処理に利用します。</li>
+            <li>Expo / React Native 関連ライブラリ: 端末ストレージ、画像選択、位置情報、地図表示などのアプリ機能に利用します。</li>
+            <li>地図表示では端末OSや地図ライブラリの機能を利用します。OS・地図提供元側の取り扱いは、それぞれのポリシーに従う場合があります。</li>
+            <li>本ページ作成時点で、広告、アプリ内課金、プッシュ通知、解析・トラッキング用SDKの導入は確認されていません。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>7. アカウント削除時の扱い</h2>
+          <p>アカウント削除はアプリ内から実行できます。削除を実行すると、以下の方針で削除、匿名化、保持を行います。</p>
+          <h3>サーバー上で削除または匿名化されるもの</h3>
+          <ul>
+            <li>メールアドレス、ログイン情報、認証セッション。</li>
+            <li>プロフィール、表示名、ユーザーID、自己紹介、アイコン等。</li>
+            <li>友達限定メモ、自分だけのメモ、友達関係、友達申請。</li>
+            <li>記録メダル等、サーバー上に保存されている個人記録。</li>
+            <li>問い合わせや通報のうち、返信先メールアドレスなど個人に紐づく情報。</li>
+          </ul>
+          <h3>匿名化して保持されるもの</h3>
+          <ul>
+            <li>全国公開メモ、全国公開店舗メモ。</li>
+            <li>承認済みの設置情報、共有機種マスタ、店舗・機種情報への公開寄与。</li>
+            <li>安全対策、迷惑行為対応、監査のために必要な最小限の運営記録。</li>
+          </ul>
+          <p>退会後、保持される公開寄与の投稿者名は「退会済みユーザー」と表示され、元の表示名やユーザーIDは表示されません。使用金額、預けメダル、カウンター、写真など端末内にだけ保存されたデータは、サーバー側の削除では端末から消えない場合があります。端末から消したい場合は、アプリの削除等が必要です。</p>
+        </section>
+
+        <section class="section">
+          <h2>8. お問い合わせ</h2>
+          <p>本ポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+          <p><a href="mailto:gacenmemory@gmail.com">gacenmemory@gmail.com</a></p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>© Arcade Memory Studio</span>
+        <span>最終更新日: 2026年6月5日</span>
+      </div>
+    </footer>
+  </body>
+</html>
